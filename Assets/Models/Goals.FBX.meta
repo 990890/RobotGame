@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 9ff49d88a5107cb48b92f31e7d710c99
+timeCreated: 1515641023
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: GoalPost
+    100004: Net
+    100006: Net001
+    100008: Net002
+    100010: Net003
+    100012: Net004
+    100014: NetLeft
+    100016: NetRight
+    100018: Goals01
+    100020: Goals02
+    100022: Goals03
+    100024: Goals04
+    400000: //RootNode
+    400002: GoalPost
+    400004: Net
+    400006: Net001
+    400008: Net002
+    400010: Net003
+    400012: Net004
+    400014: NetLeft
+    400016: NetRight
+    400018: Goals01
+    400020: Goals02
+    400022: Goals03
+    400024: Goals04
+    2100000: 02 - Default
+    2300000: //RootNode
+    2300002: GoalPost
+    2300004: Net
+    2300006: Net001
+    2300008: Net002
+    2300010: Net003
+    2300012: Net004
+    2300014: NetLeft
+    2300016: NetRight
+    2300018: Goals01
+    2300020: Goals02
+    2300022: Goals03
+    2300024: Goals04
+    3300000: //RootNode
+    3300002: GoalPost
+    3300004: Net
+    3300006: Net001
+    3300008: Net002
+    3300010: Net003
+    3300012: Net004
+    3300014: NetLeft
+    3300016: NetRight
+    3300018: Goals01
+    3300020: Goals02
+    3300022: Goals03
+    3300024: Goals04
+    4300000: GoalPost
+    4300002: Net
+    4300004: Net001
+    4300006: Net002
+    4300008: Net003
+    4300010: Net004
+    4300012: NetLeft
+    4300014: NetRight
+    4300016: Goals01
+    4300018: Goals03
+    4300020: Goals04
+    4300022: Goals02
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: f4d9b228491bf7644addc63ae4b089b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default
+    second: {fileID: 2100000, guid: db7d426dc47b49c4ab58d007af12171b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f310fa60191a6c14eb6b285cb62d5bb7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

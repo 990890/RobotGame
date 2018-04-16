@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: c4b15ffff14a24446b44cb730d39e174
+timeCreated: 1511333329
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Axel Left
+    100002: Axel Right
+    100004: Body
+    100006: Bone_Arm_L
+    100008: Bone_Arm_R
+    100010: Bone_Arm_R206
+    100012: Bone_Arm_R207
+    100014: Bone_Arm_R208
+    100016: Bone_Arm_R209
+    100018: Bone_Arm_R210
+    100020: Bone_Arm_R211
+    100022: Bone_Arm_R212
+    100024: Bone_Arm_R213
+    100026: Bone_Arm_R214
+    100028: Bone_Arm_R215
+    100030: Bone_Arm_R216
+    100032: Bone_Arm_R217
+    100034: Bone_back
+    100036: Bone_Head
+    100038: Bone_Neck
+    100040: //RootNode
+    100042: Claw001
+    100044: Claw002
+    100046: Elbow001
+    100048: Elbow002
+    100050: eye
+    100052: eye2
+    100054: Front Gear left
+    100056: Front Gear left001
+    100058: Head
+    100060: Main Gear left
+    100062: Main Gear left001
+    100064: Pincer_R001
+    100066: Pincer_R002
+    100068: RearGear left
+    100070: RearGear left001
+    100072: Ring
+    100074: Ring001
+    100076: Root
+    100078: Sholder Right001
+    100080: Sholder Right002
+    100082: Track
+    100084: TrackPath
+    100086: TrackPath001
+    100088: Tracks01
+    100090: Tracks02
+    100092: Tracks027
+    100094: Tracks028
+    100096: Tracks029
+    100098: Tracks03
+    100100: Tracks030
+    100102: Tracks031
+    100104: Tracks032
+    100106: Tracks033
+    100108: Tracks034
+    100110: Tracks035
+    100112: Tracks036
+    100114: Tracks037
+    100116: Tracks038
+    100118: Tracks039
+    100120: Tracks04
+    100122: Tracks040
+    100124: Tracks041
+    100126: Tracks042
+    100128: Tracks043
+    100130: Tracks044
+    100132: Tracks045
+    100134: Tracks046
+    100136: Tracks047
+    100138: Tracks048
+    100140: Tracks049
+    100142: Tracks05
+    100144: Tracks050
+    100146: Tracks051
+    100148: Tracks06
+    100150: Tracks07
+    100152: Tracks08
+    100154: Tracks09
+    100156: Tracks10
+    100158: Tracks11
+    100160: Tracks12
+    100162: Tracks13
+    100164: Tracks14
+    100166: Tracks15
+    100168: Tracks16
+    100170: Tracks17
+    100172: Tracks18
+    100174: Tracks19
+    100176: Tracks20
+    100178: Tracks21
+    100180: Tracks22
+    100182: Tracks23
+    100184: Tracks24
+    100186: Tracks25
+    100188: Upper Arm001
+    100190: Upper Arm002
+    100192: Wrist_R001
+    100194: Wrist_R002
+    400000: Axel Left
+    400002: Axel Right
+    400004: Body
+    400006: Bone_Arm_L
+    400008: Bone_Arm_R
+    400010: Bone_Arm_R206
+    400012: Bone_Arm_R207
+    400014: Bone_Arm_R208
+    400016: Bone_Arm_R209
+    400018: Bone_Arm_R210
+    400020: Bone_Arm_R211
+    400022: Bone_Arm_R212
+    400024: Bone_Arm_R213
+    400026: Bone_Arm_R214
+    400028: Bone_Arm_R215
+    400030: Bone_Arm_R216
+    400032: Bone_Arm_R217
+    400034: Bone_back
+    400036: Bone_Head
+    400038: Bone_Neck
+    400040: //RootNode
+    400042: Claw001
+    400044: Claw002
+    400046: Elbow001
+    400048: Elbow002
+    400050: eye
+    400052: eye2
+    400054: Front Gear left
+    400056: Front Gear left001
+    400058: Head
+    400060: Main Gear left
+    400062: Main Gear left001
+    400064: Pincer_R001
+    400066: Pincer_R002
+    400068: RearGear left
+    400070: RearGear left001
+    400072: Ring
+    400074: Ring001
+    400076: Root
+    400078: Sholder Right001
+    400080: Sholder Right002
+    400082: Track
+    400084: TrackPath
+    400086: TrackPath001
+    400088: Tracks01
+    400090: Tracks02
+    400092: Tracks027
+    400094: Tracks028
+    400096: Tracks029
+    400098: Tracks03
+    400100: Tracks030
+    400102: Tracks031
+    400104: Tracks032
+    400106: Tracks033
+    400108: Tracks034
+    400110: Tracks035
+    400112: Tracks036
+    400114: Tracks037
+    400116: Tracks038
+    400118: Tracks039
+    400120: Tracks04
+    400122: Tracks040
+    400124: Tracks041
+    400126: Tracks042
+    400128: Tracks043
+    400130: Tracks044
+    400132: Tracks045
+    400134: Tracks046
+    400136: Tracks047
+    400138: Tracks048
+    400140: Tracks049
+    400142: Tracks05
+    400144: Tracks050
+    400146: Tracks051
+    400148: Tracks06
+    400150: Tracks07
+    400152: Tracks08
+    400154: Tracks09
+    400156: Tracks10
+    400158: Tracks11
+    400160: Tracks12
+    400162: Tracks13
+    400164: Tracks14
+    400166: Tracks15
+    400168: Tracks16
+    400170: Tracks17
+    400172: Tracks18
+    400174: Tracks19
+    400176: Tracks20
+    400178: Tracks21
+    400180: Tracks22
+    400182: Tracks23
+    400184: Tracks24
+    400186: Tracks25
+    400188: Upper Arm001
+    400190: Upper Arm002
+    400192: Wrist_R001
+    400194: Wrist_R002
+    2300000: Axel Left
+    2300002: Axel Right
+    2300004: Body
+    2300006: Bone_Arm_R211
+    2300008: Bone_Arm_R217
+    2300010: Claw001
+    2300012: Claw002
+    2300014: Elbow001
+    2300016: Elbow002
+    2300018: eye
+    2300020: eye2
+    2300022: Front Gear left
+    2300024: Front Gear left001
+    2300026: Head
+    2300028: Main Gear left
+    2300030: Main Gear left001
+    2300032: Pincer_R001
+    2300034: Pincer_R002
+    2300036: RearGear left
+    2300038: RearGear left001
+    2300040: Ring
+    2300042: Ring001
+    2300044: Sholder Right001
+    2300046: Sholder Right002
+    2300048: Tracks01
+    2300050: Tracks02
+    2300052: Tracks027
+    2300054: Tracks028
+    2300056: Tracks029
+    2300058: Tracks03
+    2300060: Tracks030
+    2300062: Tracks031
+    2300064: Tracks032
+    2300066: Tracks033
+    2300068: Tracks034
+    2300070: Tracks035
+    2300072: Tracks036
+    2300074: Tracks037
+    2300076: Tracks038
+    2300078: Tracks039
+    2300080: Tracks04
+    2300082: Tracks040
+    2300084: Tracks041
+    2300086: Tracks042
+    2300088: Tracks043
+    2300090: Tracks044
+    2300092: Tracks045
+    2300094: Tracks046
+    2300096: Tracks047
+    2300098: Tracks048
+    2300100: Tracks049
+    2300102: Tracks05
+    2300104: Tracks050
+    2300106: Tracks051
+    2300108: Tracks06
+    2300110: Tracks07
+    2300112: Tracks08
+    2300114: Tracks09
+    2300116: Tracks10
+    2300118: Tracks11
+    2300120: Tracks12
+    2300122: Tracks13
+    2300124: Tracks14
+    2300126: Tracks15
+    2300128: Tracks16
+    2300130: Tracks17
+    2300132: Tracks18
+    2300134: Tracks19
+    2300136: Tracks20
+    2300138: Tracks21
+    2300140: Tracks22
+    2300142: Tracks23
+    2300144: Tracks24
+    2300146: Tracks25
+    2300148: Upper Arm001
+    2300150: Upper Arm002
+    2300152: Wrist_R001
+    2300154: Wrist_R002
+    3300000: Axel Left
+    3300002: Axel Right
+    3300004: Body
+    3300006: Bone_Arm_R211
+    3300008: Bone_Arm_R217
+    3300010: Claw001
+    3300012: Claw002
+    3300014: Elbow001
+    3300016: Elbow002
+    3300018: eye
+    3300020: eye2
+    3300022: Front Gear left
+    3300024: Front Gear left001
+    3300026: Head
+    3300028: Main Gear left
+    3300030: Main Gear left001
+    3300032: Pincer_R001
+    3300034: Pincer_R002
+    3300036: RearGear left
+    3300038: RearGear left001
+    3300040: Ring
+    3300042: Ring001
+    3300044: Sholder Right001
+    3300046: Sholder Right002
+    3300048: Tracks01
+    3300050: Tracks02
+    3300052: Tracks027
+    3300054: Tracks028
+    3300056: Tracks029
+    3300058: Tracks03
+    3300060: Tracks030
+    3300062: Tracks031
+    3300064: Tracks032
+    3300066: Tracks033
+    3300068: Tracks034
+    3300070: Tracks035
+    3300072: Tracks036
+    3300074: Tracks037
+    3300076: Tracks038
+    3300078: Tracks039
+    3300080: Tracks04
+    3300082: Tracks040
+    3300084: Tracks041
+    3300086: Tracks042
+    3300088: Tracks043
+    3300090: Tracks044
+    3300092: Tracks045
+    3300094: Tracks046
+    3300096: Tracks047
+    3300098: Tracks048
+    3300100: Tracks049
+    3300102: Tracks05
+    3300104: Tracks050
+    3300106: Tracks051
+    3300108: Tracks06
+    3300110: Tracks07
+    3300112: Tracks08
+    3300114: Tracks09
+    3300116: Tracks10
+    3300118: Tracks11
+    3300120: Tracks12
+    3300122: Tracks13
+    3300124: Tracks14
+    3300126: Tracks15
+    3300128: Tracks16
+    3300130: Tracks17
+    3300132: Tracks18
+    3300134: Tracks19
+    3300136: Tracks20
+    3300138: Tracks21
+    3300140: Tracks22
+    3300142: Tracks23
+    3300144: Tracks24
+    3300146: Tracks25
+    3300148: Upper Arm001
+    3300150: Upper Arm002
+    3300152: Wrist_R001
+    3300154: Wrist_R002
+    4300000: Head
+    4300002: eye
+    4300004: Ring
+    4300006: eye2
+    4300008: Ring001
+    4300010: Body
+    4300012: Pincer_R001
+    4300014: Claw001
+    4300016: Wrist_R001
+    4300018: Bone_Arm_R211
+    4300020: Upper Arm001
+    4300022: Elbow001
+    4300024: Sholder Right001
+    4300026: Pincer_R002
+    4300028: Claw002
+    4300030: Wrist_R002
+    4300032: Bone_Arm_R217
+    4300034: Upper Arm002
+    4300036: Elbow002
+    4300038: Sholder Right002
+    4300040: Axel Right
+    4300042: Tracks035
+    4300044: Tracks034
+    4300046: Tracks033
+    4300048: Tracks038
+    4300050: Tracks037
+    4300052: Tracks036
+    4300054: Tracks029
+    4300056: Tracks028
+    4300058: Tracks027
+    4300060: Tracks032
+    4300062: Tracks031
+    4300064: Tracks030
+    4300066: Tracks039
+    4300068: Tracks048
+    4300070: Tracks047
+    4300072: Tracks046
+    4300074: Tracks051
+    4300076: Tracks050
+    4300078: Tracks049
+    4300080: Tracks042
+    4300082: Tracks041
+    4300084: Tracks040
+    4300086: Tracks045
+    4300088: Tracks044
+    4300090: Tracks043
+    4300092: RearGear left001
+    4300094: Main Gear left001
+    4300096: Front Gear left001
+    4300098: Axel Left
+    4300100: Tracks09
+    4300102: Tracks08
+    4300104: Tracks07
+    4300106: Tracks12
+    4300108: Tracks11
+    4300110: Tracks10
+    4300112: Tracks03
+    4300114: Tracks02
+    4300116: Tracks01
+    4300118: Tracks06
+    4300120: Tracks05
+    4300122: Tracks04
+    4300124: Tracks13
+    4300126: Tracks22
+    4300128: Tracks21
+    4300130: Tracks20
+    4300132: Tracks25
+    4300134: Tracks24
+    4300136: Tracks23
+    4300138: Tracks16
+    4300140: Tracks15
+    4300142: Tracks14
+    4300144: Tracks19
+    4300146: Tracks18
+    4300148: Tracks17
+    4300150: RearGear left
+    4300152: Main Gear left
+    4300154: Front Gear left
+    7400000: Move_Empty_Hand_01
+    7400002: Idel_Anim_01
+    7400004: Idel_Anim_02
+    7400006: Move_Hands_Full
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Move_Empty_Hand_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idel_Anim_01
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idel_Anim_02
+      takeName: Take 001
+      firstFrame: 190
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Move_Hands_Full
+      takeName: Take 001
+      firstFrame: 251
+      lastFrame: 352
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
