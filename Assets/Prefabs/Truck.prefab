@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 54657280102658670}
   - component: {fileID: 114180929512105612}
   - component: {fileID: 114586012330574260}
+  - component: {fileID: 114587142040111904}
   m_Layer: 10
   m_Name: Truck
   m_TagString: MovingObjects
@@ -1065,3 +1066,14 @@ MonoBehaviour:
   m_StoppingDistance: 2
   m_BrakingCoeffcient: 0.25
   m_AccelerationCoeffcient: 0.25
+--- !u!114 &114587142040111904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1483655088862702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d76ffde8acc9fd43a1798f4e58f3566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

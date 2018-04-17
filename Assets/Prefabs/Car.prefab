@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 54447884048145358}
   - component: {fileID: 114381944187700210}
   - component: {fileID: 114992900063478060}
+  - component: {fileID: 114115834302354846}
   m_Layer: 10
   m_Name: Car
   m_TagString: MovingObjects
@@ -502,6 +503,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7691084, y: 2.4716027, z: 1.401264}
   m_Center: {x: 0.023867378, y: 0.50645524, z: -0.0029928505}
+--- !u!114 &114115834302354846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1596524275261666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d76ffde8acc9fd43a1798f4e58f3566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114381944187700210
 MonoBehaviour:
   m_ObjectHideFlags: 1
