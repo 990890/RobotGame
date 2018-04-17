@@ -28,17 +28,17 @@ public class RobotSpawner : MonoBehaviour {
         }
 
         // spawn each player in a random spawn point at the start of the game
-        foreach (var item in GameObject.FindGameObjectsWithTag("Player"))
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        for (int i = 0; i < players.Length; i++)
         {
-            RespawnAtRandomSpawnPoint(item.transform);
+            RespawnAtSpawnPoint(players[i].transform,i);
+
         }
-
+       
     }
-
-    public void RespawnAtRandomSpawnPoint(Transform target) {
-
-        // get a random spawn point
-        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length - 1)];
+    public void RespawnAtSpawnPoint(Transform target, int index)
+    {
+        Transform spawnPoint = spawnPoints[index];
 
         // set target position and rotation as the spawn point chosen
         target.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
@@ -48,6 +48,12 @@ public class RobotSpawner : MonoBehaviour {
 
         if (box != null)
             box.Despawn();
+    }
+    public void RespawnAtRandomSpawnPoint(Transform target) {
+        // get a random spawn point
+        int index = Random.Range(0, spawnPoints.Length - 1);
+
+        RespawnAtSpawnPoint(target,index);
     }
 
     #endregion

@@ -1,25 +1,60 @@
-﻿using UnityEngine;
+﻿using Complete;
+using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 public class BoxGrabber : MonoBehaviour {
 
+    #region Fields
+
+    private TankMovement playerPickup;
+    private Box box;
+    private bool skipInputCall;
+    #endregion
+
     #region Methods
 
-    private void OnTriggerEnter(Collider other)
+    private void Awake()
+    {
+        playerPickup = GetComponentInParent<TankMovement>();
+    }
+    
+
+    private void OnTriggerStay(Collider other)
     {
         // cannot bring more than one box 
-        if (transform.GetComponentsInChildren<Box>().Length > 0)
+        if (box !=null)
             return;
 
-        Box box = other.GetComponent<Box>();
+        if (Input.GetButtonDown(("PickupDeploy") + playerPickup.m_PlayerNumber)) {
 
-        // it is not a box 
-        if (box == null)
-            return;
+            Box otherBox = other.GetComponent<Box>();
 
-        box.PickUp(transform);
+            // it is not a box 
+            if (otherBox == null)
+                return;
+
+            // box is already picked up
+            if (otherBox.PickedUp)
+                return;
+
+            box = otherBox;
+            box.PickUp(transform);
+            skipInputCall = true;
+        }
     }
 
+    private void Update()
+    {
+        if (!skipInputCall) {
+            if (Input.GetButtonDown(("PickupDeploy") + playerPickup.m_PlayerNumber) && box != null)
+            {
+                box.Deploy();
+                box = null;
+            }
+        }
+        skipInputCall = false;
+
+    }
     #endregion
 
 }

@@ -35,7 +35,6 @@ public class BoxSpawner : MonoBehaviour {
 
         // add callbacks to the box events
         box.OnPickUp += DelayGenerateBox;
-        box.OnDespawn += DelayGenerateBox;
 
     }
 

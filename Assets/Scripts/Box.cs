@@ -5,25 +5,31 @@ public class Box : MonoBehaviour {
 
     #region Fields
     
-    private bool pickedUp;
     public event Action OnDespawn = delegate { };
     public event Action OnPickUp = delegate { };
     #endregion
 
+    #region Properties
+
+    public bool PickedUp { get; private set; }
+
+    #endregion
+
     #region Methods
-    
+
 
     public void PickUp(Transform picker) {
 
         // it can only be picked up once
-        if (pickedUp)
+        if (PickedUp)
             return;
 
-        pickedUp = true;
+        PickedUp = true;
 
         // parenting the box to the picker (player's object picker) and resetting its local position
         transform.SetParent(picker);
         transform.localPosition = Vector3.zero;
+        transform.rotation = new Quaternion(0, 0, 0, 0);
 
         // calling any events connected to this box pickup
         OnPickUp();
@@ -38,7 +44,8 @@ public class Box : MonoBehaviour {
         Destroy(gameObject);
     }
     public void Deploy() {
-        Despawn();
+        transform.parent = null;
+        PickedUp = false;
     }
     #endregion
 
