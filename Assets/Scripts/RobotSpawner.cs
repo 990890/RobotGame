@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 
 public class RobotSpawner : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class RobotSpawner : MonoBehaviour {
     #region Fields
 
     [SerializeField]
-    private Transform[] spawnPoints;
+    private SpawnPoint[] spawnPoints;
 
     #endregion
 
@@ -38,16 +39,22 @@ public class RobotSpawner : MonoBehaviour {
     }
     public void RespawnAtSpawnPoint(Transform target, int index)
     {
-        Transform spawnPoint = spawnPoints[index];
+        SpawnPoint spawnPoint = spawnPoints[index];
 
+        if (spawnPoint.Occupied)
+            spawnPoint = GetFirstFreeSpawnPoint();
+        
         // set target position and rotation as the spawn point chosen
-        target.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
+        target.SetPositionAndRotation(spawnPoint.transform.position, spawnPoint.transform.rotation);
 
         // if the target is holding a box it get despawned
         Box box = target.GetComponentInChildren<Box>();
 
         if (box != null)
             box.Despawn();
+    }
+    public SpawnPoint GetFirstFreeSpawnPoint() {
+        return spawnPoints.Where(x => x.Occupied == false).FirstOrDefault();
     }
     public void RespawnAtRandomSpawnPoint(Transform target) {
         // get a random spawn point

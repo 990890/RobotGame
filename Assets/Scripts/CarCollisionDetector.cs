@@ -34,7 +34,10 @@ public class CarCollisionDetector : MonoBehaviour {
         {
             RobotSpawner.Instance.RespawnAtRandomSpawnPoint(otherTransform);
         }
-
+        Box box = otherTransform.GetComponent<Box>();
+        if (box != null) {
+            box.Despawn();
+        }
 
     }
 }
