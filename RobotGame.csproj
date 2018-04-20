@@ -334,12 +334,16 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\Activatable.cs" />
-    <Compile Include="Assets\Scripts\Box.cs" />
-    <Compile Include="Assets\Scripts\BoxGrabber.cs" />
+    <Compile Include="Assets\Scripts\Boundary.cs" />
+    <Compile Include="Assets\Scripts\BoxPickable.cs" />
     <Compile Include="Assets\Scripts\BoxSpawner.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CarCollisionDetector.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
+    <Compile Include="Assets\Scripts\DeliveryArea.cs" />
+    <Compile Include="Assets\Scripts\Grabber.cs" />
+    <Compile Include="Assets\Scripts\HUDManager.cs" />
+    <Compile Include="Assets\Scripts\IPickable.cs" />
     <Compile Include="Assets\Scripts\Level_0_Controller.cs" />
     <Compile Include="Assets\Scripts\Levels\Level001\AutoPilot.cs" />
     <Compile Include="Assets\Scripts\Levels\Level001\CarController.cs" />
@@ -353,11 +357,15 @@
     <Compile Include="Assets\Scripts\Levels\Level001\TraficManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
+    <Compile Include="Assets\Scripts\MonoPickable.cs" />
     <Compile Include="Assets\Scripts\ObjectScripts\Activatable.cs" />
     <Compile Include="Assets\Scripts\ObjectScripts\SoccerActive.cs" />
+    <Compile Include="Assets\Scripts\RobotPickable.cs" />
     <Compile Include="Assets\Scripts\RobotSpawner.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\SpawnSettings.cs" />
     <Compile Include="Assets\Scripts\Tank\PlayerPickup.cs" />
     <Compile Include="Assets\Scripts\Tank\TankHealth.cs" />
@@ -365,7 +373,6 @@
     <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
     <Compile Include="Assets\Scripts\TimerController.cs" />
     <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
-    <Compile Include="Assets\SpawnPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />

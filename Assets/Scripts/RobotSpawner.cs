@@ -21,7 +21,7 @@ public class RobotSpawner : MonoBehaviour {
     private void Awake()
     {
         
-        // singleton ---- you just need one robot spawner per scene
+        // singleton 
         if (Instance == null)
             Instance = this;
         else {
@@ -41,17 +41,20 @@ public class RobotSpawner : MonoBehaviour {
     {
         SpawnPoint spawnPoint = spawnPoints[index];
 
+        // if the spawn point is already occupied use the first free one
         if (spawnPoint.Occupied)
             spawnPoint = GetFirstFreeSpawnPoint();
-        
+
+        spawnPoint.Occupied = true;
         // set target position and rotation as the spawn point chosen
         target.SetPositionAndRotation(spawnPoint.transform.position, spawnPoint.transform.rotation);
 
         // if the target is holding a box it get despawned
-        Box box = target.GetComponentInChildren<Box>();
+        BoxPickable box = target.GetComponentInChildren<BoxPickable>();
 
         if (box != null)
             box.Despawn();
+
     }
     public SpawnPoint GetFirstFreeSpawnPoint() {
         return spawnPoints.Where(x => x.Occupied == false).FirstOrDefault();

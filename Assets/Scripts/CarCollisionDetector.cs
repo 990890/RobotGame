@@ -17,13 +17,11 @@ public class CarCollisionDetector : MonoBehaviour {
         controller = GetComponent<CarController>();
     }
 
-    #endregion
-
     private void OnCollisionEnter(Collision collision)
     {
 
         // if the car is stopped, the player will not get killed
-        if(Mathf.Abs(controller.GetSpeed())==0)
+        if (Mathf.Abs(controller.GetSpeed()) == 0)
             return;
 
         // cache hit object transform
@@ -34,10 +32,15 @@ public class CarCollisionDetector : MonoBehaviour {
         {
             RobotSpawner.Instance.RespawnAtRandomSpawnPoint(otherTransform);
         }
-        Box box = otherTransform.GetComponent<Box>();
-        if (box != null) {
-            box.Despawn();
-        }
 
+        // if the hit object has a grabber, despawn its pickable
+        Grabber grabber = otherTransform.GetComponentInChildren<Grabber>();
+        if (grabber != null)
+        {
+            grabber.DespawnPickable();
+        }
     }
+    #endregion
+
+
 }

@@ -8,7 +8,7 @@ public class BoxSpawner : MonoBehaviour {
     private float spawnDelay = 2f;
 
     [SerializeField]
-    private Box boxPrefab;
+    private BoxPickable boxPrefab;
 
     #endregion
 
@@ -27,11 +27,11 @@ public class BoxSpawner : MonoBehaviour {
     public void GenerateBox() {
 
         // cannot hold more than one box 
-        if (transform.GetComponentsInChildren<Box>().Length > 0)
+        if (transform.GetComponentsInChildren<BoxPickable>().Length > 0)
             return;
 
         // instantiate a new box 
-        Box box = Instantiate(boxPrefab,transform.position,Quaternion.identity,transform);
+        BoxPickable box = Instantiate(boxPrefab,transform.position,Quaternion.identity,transform);
 
         // add callbacks to the box events
         box.OnPickUp += DelayGenerateBox;

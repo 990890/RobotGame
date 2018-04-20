@@ -1,16 +1,32 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class TimerController : MonoBehaviour {
 
+    #region Static
+
+    private static TimerController _instance;
+    public static TimerController Instance
+    {
+        // singleton
+        get
+        {
+            if (_instance == null)
+                _instance = FindObjectOfType<TimerController>();
+            return _instance;
+        }
+    }
+    #endregion
 
     #region Fields
 
+    // actual game timer
     [SerializeField]
     private float timer = 120;
 
-    [SerializeField]
-    private Text timerText;
+    // timer update callback 
+    public event Action<float> OnTimerUpdate = delegate { };
     #endregion
 
     #region Methods
@@ -21,15 +37,19 @@ public class TimerController : MonoBehaviour {
     }
 
     private void UpdateTimer() {
+
         timer -= Time.deltaTime;
+
         if (timer <= 0) {
             timer = 0;
-            Time.timeScale = 0;
-        }
-        var seconds = timer % 60;
-        var minutes = Mathf.FloorToInt(timer / 60);
-        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
 
+            // reload current scene
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex);
+        }
+        
+        // execute any functions linked to this callback
+        OnTimerUpdate(timer);
     }
     #endregion
 

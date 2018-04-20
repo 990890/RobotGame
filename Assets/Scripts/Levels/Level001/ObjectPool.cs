@@ -8,7 +8,7 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
 
-    private static List<ObjectInfo> m_Objects = new List<ObjectInfo>();
+    private List<ObjectInfo> m_Objects = new List<ObjectInfo>();
 
     //**********************************************************************//
     // Unity Callback methods
