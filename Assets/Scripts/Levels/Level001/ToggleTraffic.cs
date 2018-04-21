@@ -12,11 +12,12 @@ public class  ToggleTraffic : Interactive {
     public TraficManager m_TrafficManger;
     //box collider of the barrier that is the parent object of this object.
     BoxCollider m_Barrier;
-
+    Canvas canvas;
     bool m_IsTriggerOccupied = false;
 
     // Use this for initialization
     void Start () {
+        canvas = GetComponentInChildren<Canvas>();
         m_Barrier = GetComponentInParent<BoxCollider>();
         if (m_TrafficManger == null)
         {
@@ -28,16 +29,23 @@ public class  ToggleTraffic : Interactive {
 
 	// Update is called once per frame
 	void Update () {
-
+        if (m_IsTriggerOccupied && Input.GetKeyDown(KeyCode.B))
+            ToggleLights();
 	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") m_IsTriggerOccupied = true;
+        if (other.tag == "Player") {
+            m_IsTriggerOccupied = true;
+            canvas.enabled = true;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player") m_IsTriggerOccupied = false;
+        if (other.tag == "Player") {
+            m_IsTriggerOccupied = false;
+            canvas.enabled = false;
+        }
     }
 
     public override bool CanInterAct()
