@@ -16,8 +16,22 @@ public class TraficManager : MonoBehaviour {
     {
         foreach (BoxCollider Barrier in m_StopBarriers)
         {
-            if (Barrier.enabled == true) Barrier.enabled = false;
-            else Barrier.enabled = true;
+            if (Barrier.enabled == true)
+            {
+                Barrier.enabled = false;
+                foreach (var item in Barrier.GetComponentsInChildren<Light>())
+                {
+                    item.color = Color.red;
+                }
+
+            }
+            else {
+                Barrier.enabled = true;
+                foreach (var item in Barrier.GetComponentsInChildren<Light>())
+                {
+                    item.color = Color.green;
+                }
+            }
         }
         m_Time = Time.timeSinceLevelLoad;
     }
@@ -33,6 +47,7 @@ public class TraficManager : MonoBehaviour {
             if (Barrier.tag == "TrafficLeftRight") Barrier.enabled = false;
             else Barrier.enabled = true;
         }
+        ToggleLights();
     }
 
     // Update is called once per frame
